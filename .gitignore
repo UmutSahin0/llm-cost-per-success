@@ -1,0 +1,15 @@
+# Secrets
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+
+# Generated experiment output (the committed sample lives in examples/)
+outputs/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store

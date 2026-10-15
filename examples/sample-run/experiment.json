@@ -1,0 +1,323 @@
+{
+  "experiment_id": "20261001-123457-ucuz-orta-pahali-50eval",
+  "started_at": "2026-10-01T12:34:57.282933+03:00",
+  "description": "",
+  "architecture": "direct-llm-eval",
+  "models": [
+    "deepseek/deepseek-v4.1-flash",
+    "openai/gpt-5.6-luna",
+    "qwen/qwen3.8-flash"
+  ],
+  "parameters": {
+    "temperature": 0,
+    "max_tokens": 256,
+    "max_attempts": 3,
+    "repetitions": 5
+  },
+  "eval_set": {
+    "task_count": 50,
+    "categories": {
+      "a": "çok adımlı aritmetik, yüzde, olasılık ve kombinatorik",
+      "l": "mantık ve çıkarım",
+      "d": "tarih ve iş günü",
+      "s": "metin-kural ve dikkat",
+      "f": "katı çıktı formatı"
+    },
+    "tasks": [
+      {
+        "id": "a01",
+        "prompt": "(17*23)+(91/7) nedir? Sadece sayı.",
+        "expected_output": "404"
+      },
+      {
+        "id": "a02",
+        "prompt": "(840/7)*13-95 nedir? Sadece sayı.",
+        "expected_output": "1465"
+      },
+      {
+        "id": "a03",
+        "prompt": "1200 tutara önce %17 indirim, sonra indirimli fiyata %20 vergi uygulanır. Nihai tutar? Sadece sayı.",
+        "expected_output": "1195.2"
+      },
+      {
+        "id": "a04",
+        "prompt": "3^5 + 2^8 - 19 nedir? Sadece sayı.",
+        "expected_output": "480"
+      },
+      {
+        "id": "a05",
+        "prompt": "Bir sayı %25 artıp sonra %20 azalırsa başlangıca göre değişim yüzde kaçtır? Sadece sayı.",
+        "expected_output": "0"
+      },
+      {
+        "id": "a06",
+        "prompt": "240 sayısının %37.5i nedir? Sadece sayı.",
+        "expected_output": "90"
+      },
+      {
+        "id": "a07",
+        "prompt": "5 işçi işi 12 günde yapıyor. Aynı hızla 8 işçi kaç günde yapar? Sadece sayı.",
+        "expected_output": "7.5"
+      },
+      {
+        "id": "a08",
+        "prompt": "Üç ardışık çift sayının toplamı 126. Ortanca sayı? Sadece sayı.",
+        "expected_output": "42"
+      },
+      {
+        "id": "a09",
+        "prompt": "1, 4, 10, 22, 46 dizisinin sonraki elemanı? Sadece sayı.",
+        "expected_output": "94"
+      },
+      {
+        "id": "a10",
+        "prompt": "Bir ürün 800 TL, %10 indirimli; sonra 72 TL kupon düşülüyor. Nihai fiyat? Sadece sayı.",
+        "expected_output": "648"
+      },
+      {
+        "id": "a11",
+        "prompt": "(999 mod 37) nedir? Sadece sayı.",
+        "expected_output": "0"
+      },
+      {
+        "id": "a12",
+        "prompt": "Bir zar iki kez atılıyor. Toplamın 7 olma olasılığı? Kesir olarak yaz.",
+        "expected_output": "1/6"
+      },
+      {
+        "id": "a13",
+        "prompt": "10 kişiden başkan ve başkan yardımcısı seçme sayısı? Sadece sayı.",
+        "expected_output": "90"
+      },
+      {
+        "id": "a14",
+        "prompt": "72nin pozitif bölen sayısı? Sadece sayı.",
+        "expected_output": "12"
+      },
+      {
+        "id": "a15",
+        "prompt": "0.125 sayısını en sade kesir olarak yaz.",
+        "expected_output": "1/8"
+      },
+      {
+        "id": "l01",
+        "prompt": "Tüm Rler Sdir. Bazı Sler Tdir. Tüm Rler T midir? Sadece evet/hayır.",
+        "expected_output": "hayır"
+      },
+      {
+        "id": "l02",
+        "prompt": "Hiçbir A B değildir. Tüm Cler Adır. Herhangi bir C B olabilir mi? evet/hayır.",
+        "expected_output": "hayır"
+      },
+      {
+        "id": "l03",
+        "prompt": "Eğer P ise Q. P doğru, Q yanlış. P doğru olabilir mi? evet/hayır.",
+        "expected_output": "hayır"
+      },
+      {
+        "id": "l04",
+        "prompt": "Ali Berradan uzun, Berra Candan uzun. En kısa kim? Sadece isim.",
+        "expected_output": "Candan"
+      },
+      {
+        "id": "l05",
+        "prompt": "X sadece Y ise olur. X oldu. Y olmuş mudur? evet/hayır.",
+        "expected_output": "evet"
+      },
+      {
+        "id": "l06",
+        "prompt": "Üç kutu: biri yalnız elma, biri yalnız armut, biri karışık; etiketlerin hepsi yanlış. Karışık kutuyu bulmak için hangi etiketli kutudan bir meyve çekersin? Sadece etiket.",
+        "expected_output": "karışık"
+      },
+      {
+        "id": "l07",
+        "prompt": "A doğru söylüyor: B yalan söylüyor. B doğru söylüyor: A yalan söylüyor. İkisi aynı anda doğru söyleyebilir mi? evet/hayır.",
+        "expected_output": "hayır"
+      },
+      {
+        "id": "l08",
+        "prompt": "Bugün Pazartesi ise 100 gün sonra hangi gün? Sadece gün adı.",
+        "expected_output": "Çarşamba"
+      },
+      {
+        "id": "l09",
+        "prompt": "Bir ifadede tam olarak bir önerme doğru: P, Q, R. P yanlış ve Q yanlış ise R doğru mudur? evet/hayır.",
+        "expected_output": "evet"
+      },
+      {
+        "id": "l10",
+        "prompt": "Tüm kediler memelidir. Misket kedidir. Misket memeli midir? evet/hayır.",
+        "expected_output": "evet"
+      },
+      {
+        "id": "d01",
+        "prompt": "2026-10-15 Perşembe. Teslim günü sayılmadan 3 iş günü sonrası? YYYY-AA-GG.",
+        "expected_output": "2026-10-20"
+      },
+      {
+        "id": "d02",
+        "prompt": "2028 artık yıl. 2028-02-28den iki gün sonra? YYYY-AA-GG.",
+        "expected_output": "2028-03-01"
+      },
+      {
+        "id": "d03",
+        "prompt": "2026-12-31den 1 gün sonra? YYYY-AA-GG.",
+        "expected_output": "2027-01-01"
+      },
+      {
+        "id": "d04",
+        "prompt": "Cuma günü 2 iş günü sonrası hangi gün? Sadece gün adı.",
+        "expected_output": "Salı"
+      },
+      {
+        "id": "d05",
+        "prompt": "2026-01-01 Perşembe. 31 gün sonra hangi gün? Sadece gün adı.",
+        "expected_output": "Pazar"
+      },
+      {
+        "id": "s01",
+        "prompt": "\"benchmark\" kelimesinde kaç farklı harf vardır? Sadece sayı.",
+        "expected_output": "9"
+      },
+      {
+        "id": "s02",
+        "prompt": "\"Maliyet Sismesi\" ifadesini küçük harf, boşluksuz yaz.",
+        "expected_output": "maliyetsismesi"
+      },
+      {
+        "id": "s03",
+        "prompt": "\"ABCDE\" metnini ters çevir.",
+        "expected_output": "EDCBA"
+      },
+      {
+        "id": "s04",
+        "prompt": "\"aabbccdde\" içinde en sık geçen harf? Sadece harf.",
+        "expected_output": "a"
+      },
+      {
+        "id": "s05",
+        "prompt": "\"Open Router\" ifadesindeki boşluk hariç karakter sayısı? Sadece sayı.",
+        "expected_output": "10"
+      },
+      {
+        "id": "s06",
+        "prompt": "\"retry-retry-cost\" içinde tireleri çıkarınca kaç karakter olur? Sadece sayı.",
+        "expected_output": "14"
+      },
+      {
+        "id": "s07",
+        "prompt": "\"a1b2c3\" içindeki rakamların toplamı? Sadece sayı.",
+        "expected_output": "6"
+      },
+      {
+        "id": "s08",
+        "prompt": "\"KARAR\" palindrom mudur? evet/hayır.",
+        "expected_output": "evet"
+      },
+      {
+        "id": "s09",
+        "prompt": "\"abcabc\" en kısa tekrar eden birim nedir?",
+        "expected_output": "abc"
+      },
+      {
+        "id": "s10",
+        "prompt": "\"a-b-c-d\"de kaç tire vardır? Sadece sayı.",
+        "expected_output": "3"
+      },
+      {
+        "id": "f01",
+        "prompt": "7 ve 9u topla. Yalnızca `sonuc=16` formatında yaz.",
+        "expected_output": "sonuc=16"
+      },
+      {
+        "id": "f02",
+        "prompt": "42yi ikilik sisteme çevir. Yalnızca `bin=101010` yaz.",
+        "expected_output": "bin=101010"
+      },
+      {
+        "id": "f03",
+        "prompt": "Birinci=12, ikinci=15. Büyük olanı `kazanan=ikinci` olarak yaz.",
+        "expected_output": "kazanan=ikinci"
+      },
+      {
+        "id": "f04",
+        "prompt": "8in küpü. Yalnızca `cevap=512` yaz.",
+        "expected_output": "cevap=512"
+      },
+      {
+        "id": "f05",
+        "prompt": "100ün %5i. Yalnızca `deger=5` yaz.",
+        "expected_output": "deger=5"
+      },
+      {
+        "id": "x01",
+        "prompt": "Bir tren 180 km yolu saatte 72 km hızla gider. Süre? Sadece saat.",
+        "expected_output": "2.5"
+      },
+      {
+        "id": "x02",
+        "prompt": "4, 9, 16, 25 dizisinin sonraki elemanı? Sadece sayı.",
+        "expected_output": "36"
+      },
+      {
+        "id": "x03",
+        "prompt": "Bir sayının üçte biri 18 ise sayı? Sadece sayı.",
+        "expected_output": "54"
+      },
+      {
+        "id": "x04",
+        "prompt": "\"aabccc\" içindeki c harfi kaç kez geçer? Sadece sayı.",
+        "expected_output": "3"
+      },
+      {
+        "id": "x05",
+        "prompt": "Yalnızca `durum=basarili` yaz.",
+        "expected_output": "durum=basarili"
+      }
+    ],
+    "sha256": "ed81d7879380421ba7736d9f29f6c3d547a71ee754aaa2cbe982c029b4201fe2"
+  },
+  "pricing_catalog": {
+    "deepseek/deepseek-v4.1-flash": {
+      "segment": "orta",
+      "input_per_million_usd": 0.13,
+      "output_per_million_usd": 0.52,
+      "reasoning_per_million_usd": 0.52
+    },
+    "openai/gpt-5.6-luna": {
+      "segment": "pahalı",
+      "input_per_million_usd": 0.2,
+      "output_per_million_usd": 1.2,
+      "reasoning_per_million_usd": 1.2
+    },
+    "qwen/qwen3.8-flash": {
+      "segment": "ucuz",
+      "input_per_million_usd": 0.15,
+      "output_per_million_usd": 0.47,
+      "reasoning_per_million_usd": 0.47
+    }
+  },
+  "output": "runs.csv",
+  "metrics": [
+    "run_id",
+    "model",
+    "task_id",
+    "repeat",
+    "success",
+    "first_attempt_success",
+    "retry_count",
+    "llm_calls",
+    "latency_seconds",
+    "input_tokens",
+    "output_tokens",
+    "reasoning_tokens",
+    "cost_usd",
+    "answer",
+    "error",
+    "timestamp"
+  ],
+  "runtime": {
+    "python": "3.14.0",
+    "platform": "Windows-11-10.0.26200-SP0"
+  }
+}

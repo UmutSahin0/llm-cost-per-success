@@ -1,0 +1,311 @@
+{
+  "categories": {
+    "a": "multi-step arithmetic, percentages, probability and combinatorics",
+    "l": "logic and inference",
+    "d": "dates and business days",
+    "s": "string rules and attention to detail",
+    "f": "strict output format"
+  },
+  "tasks": [
+    {
+      "id": "a01",
+      "category": "a",
+      "prompt": "(17*23)+(91/7) nedir? Sadece sayı.",
+      "expected": "404"
+    },
+    {
+      "id": "a02",
+      "category": "a",
+      "prompt": "(840/7)*13-95 nedir? Sadece sayı.",
+      "expected": "1465"
+    },
+    {
+      "id": "a03",
+      "category": "a",
+      "prompt": "1200 tutara önce %17 indirim, sonra indirimli fiyata %20 vergi uygulanır. Nihai tutar? Sadece sayı.",
+      "expected": "1195.2"
+    },
+    {
+      "id": "a04",
+      "category": "a",
+      "prompt": "3^5 + 2^8 - 19 nedir? Sadece sayı.",
+      "expected": "480"
+    },
+    {
+      "id": "a05",
+      "category": "a",
+      "prompt": "Bir sayı %25 artıp sonra %20 azalırsa başlangıca göre değişim yüzde kaçtır? Sadece sayı.",
+      "expected": "0"
+    },
+    {
+      "id": "a06",
+      "category": "a",
+      "prompt": "240 sayısının %37.5i nedir? Sadece sayı.",
+      "expected": "90"
+    },
+    {
+      "id": "a07",
+      "category": "a",
+      "prompt": "5 işçi işi 12 günde yapıyor. Aynı hızla 8 işçi kaç günde yapar? Sadece sayı.",
+      "expected": "7.5"
+    },
+    {
+      "id": "a08",
+      "category": "a",
+      "prompt": "Üç ardışık çift sayının toplamı 126. Ortanca sayı? Sadece sayı.",
+      "expected": "42"
+    },
+    {
+      "id": "a09",
+      "category": "a",
+      "prompt": "1, 4, 10, 22, 46 dizisinin sonraki elemanı? Sadece sayı.",
+      "expected": "94"
+    },
+    {
+      "id": "a10",
+      "category": "a",
+      "prompt": "Bir ürün 800 TL, %10 indirimli; sonra 72 TL kupon düşülüyor. Nihai fiyat? Sadece sayı.",
+      "expected": "648"
+    },
+    {
+      "id": "a11",
+      "category": "a",
+      "prompt": "(999 mod 37) nedir? Sadece sayı.",
+      "expected": "0"
+    },
+    {
+      "id": "a12",
+      "category": "a",
+      "prompt": "Bir zar iki kez atılıyor. Toplamın 7 olma olasılığı? Kesir olarak yaz.",
+      "expected": "1/6"
+    },
+    {
+      "id": "a13",
+      "category": "a",
+      "prompt": "10 kişiden başkan ve başkan yardımcısı seçme sayısı? Sadece sayı.",
+      "expected": "90"
+    },
+    {
+      "id": "a14",
+      "category": "a",
+      "prompt": "72nin pozitif bölen sayısı? Sadece sayı.",
+      "expected": "12"
+    },
+    {
+      "id": "a15",
+      "category": "a",
+      "prompt": "0.125 sayısını en sade kesir olarak yaz.",
+      "expected": "1/8"
+    },
+    {
+      "id": "l01",
+      "category": "l",
+      "prompt": "Tüm Rler Sdir. Bazı Sler Tdir. Tüm Rler T midir? Sadece evet/hayır.",
+      "expected": "hayır"
+    },
+    {
+      "id": "l02",
+      "category": "l",
+      "prompt": "Hiçbir A B değildir. Tüm Cler Adır. Herhangi bir C B olabilir mi? evet/hayır.",
+      "expected": "hayır"
+    },
+    {
+      "id": "l03",
+      "category": "l",
+      "prompt": "Eğer P ise Q. P doğru, Q yanlış. P doğru olabilir mi? evet/hayır.",
+      "expected": "hayır"
+    },
+    {
+      "id": "l04",
+      "category": "l",
+      "prompt": "Ali Berradan uzun, Berra Candan uzun. En kısa kim? Sadece isim.",
+      "expected": "Candan"
+    },
+    {
+      "id": "l05",
+      "category": "l",
+      "prompt": "X sadece Y ise olur. X oldu. Y olmuş mudur? evet/hayır.",
+      "expected": "evet"
+    },
+    {
+      "id": "l06",
+      "category": "l",
+      "prompt": "Üç kutu: biri yalnız elma, biri yalnız armut, biri karışık; etiketlerin hepsi yanlış. Karışık kutuyu bulmak için hangi etiketli kutudan bir meyve çekersin? Sadece etiket.",
+      "expected": "karışık"
+    },
+    {
+      "id": "l07",
+      "category": "l",
+      "prompt": "A doğru söylüyor: B yalan söylüyor. B doğru söylüyor: A yalan söylüyor. İkisi aynı anda doğru söyleyebilir mi? evet/hayır.",
+      "expected": "hayır"
+    },
+    {
+      "id": "l08",
+      "category": "l",
+      "prompt": "Bugün Pazartesi ise 100 gün sonra hangi gün? Sadece gün adı.",
+      "expected": "Çarşamba"
+    },
+    {
+      "id": "l09",
+      "category": "l",
+      "prompt": "Bir ifadede tam olarak bir önerme doğru: P, Q, R. P yanlış ve Q yanlış ise R doğru mudur? evet/hayır.",
+      "expected": "evet"
+    },
+    {
+      "id": "l10",
+      "category": "l",
+      "prompt": "Tüm kediler memelidir. Misket kedidir. Misket memeli midir? evet/hayır.",
+      "expected": "evet"
+    },
+    {
+      "id": "d01",
+      "category": "d",
+      "prompt": "2026-10-15 Perşembe. Teslim günü sayılmadan 3 iş günü sonrası? YYYY-AA-GG.",
+      "expected": "2026-10-20"
+    },
+    {
+      "id": "d02",
+      "category": "d",
+      "prompt": "2028 artık yıl. 2028-02-28den iki gün sonra? YYYY-AA-GG.",
+      "expected": "2028-03-01"
+    },
+    {
+      "id": "d03",
+      "category": "d",
+      "prompt": "2026-12-31den 1 gün sonra? YYYY-AA-GG.",
+      "expected": "2027-01-01"
+    },
+    {
+      "id": "d04",
+      "category": "d",
+      "prompt": "Cuma günü 2 iş günü sonrası hangi gün? Sadece gün adı.",
+      "expected": "Salı"
+    },
+    {
+      "id": "d05",
+      "category": "d",
+      "prompt": "2026-01-01 Perşembe. 31 gün sonra hangi gün? Sadece gün adı.",
+      "expected": "Pazar"
+    },
+    {
+      "id": "s01",
+      "category": "s",
+      "prompt": "\"benchmark\" kelimesinde kaç farklı harf vardır? Sadece sayı.",
+      "expected": "9"
+    },
+    {
+      "id": "s02",
+      "category": "s",
+      "prompt": "\"Maliyet Sismesi\" ifadesini küçük harf, boşluksuz yaz.",
+      "expected": "maliyetsismesi"
+    },
+    {
+      "id": "s03",
+      "category": "s",
+      "prompt": "\"ABCDE\" metnini ters çevir.",
+      "expected": "EDCBA"
+    },
+    {
+      "id": "s04",
+      "category": "s",
+      "prompt": "\"aabbccdde\" içinde en sık geçen harf? Sadece harf.",
+      "expected": "a"
+    },
+    {
+      "id": "s05",
+      "category": "s",
+      "prompt": "\"Open Router\" ifadesindeki boşluk hariç karakter sayısı? Sadece sayı.",
+      "expected": "10"
+    },
+    {
+      "id": "s06",
+      "category": "s",
+      "prompt": "\"retry-retry-cost\" içinde tireleri çıkarınca kaç karakter olur? Sadece sayı.",
+      "expected": "14"
+    },
+    {
+      "id": "s07",
+      "category": "s",
+      "prompt": "\"a1b2c3\" içindeki rakamların toplamı? Sadece sayı.",
+      "expected": "6"
+    },
+    {
+      "id": "s08",
+      "category": "s",
+      "prompt": "\"KARAR\" palindrom mudur? evet/hayır.",
+      "expected": "evet"
+    },
+    {
+      "id": "s09",
+      "category": "s",
+      "prompt": "\"abcabc\" en kısa tekrar eden birim nedir?",
+      "expected": "abc"
+    },
+    {
+      "id": "s10",
+      "category": "s",
+      "prompt": "\"a-b-c-d\"de kaç tire vardır? Sadece sayı.",
+      "expected": "3"
+    },
+    {
+      "id": "f01",
+      "category": "f",
+      "prompt": "7 ve 9u topla. Yalnızca `sonuc=16` formatında yaz.",
+      "expected": "sonuc=16"
+    },
+    {
+      "id": "f02",
+      "category": "f",
+      "prompt": "42yi ikilik sisteme çevir. Yalnızca `bin=101010` yaz.",
+      "expected": "bin=101010"
+    },
+    {
+      "id": "f03",
+      "category": "f",
+      "prompt": "Birinci=12, ikinci=15. Büyük olanı `kazanan=ikinci` olarak yaz.",
+      "expected": "kazanan=ikinci"
+    },
+    {
+      "id": "f04",
+      "category": "f",
+      "prompt": "8in küpü. Yalnızca `cevap=512` yaz.",
+      "expected": "cevap=512"
+    },
+    {
+      "id": "f05",
+      "category": "f",
+      "prompt": "100ün %5i. Yalnızca `deger=5` yaz.",
+      "expected": "deger=5"
+    },
+    {
+      "id": "x01",
+      "category": "x",
+      "prompt": "Bir tren 180 km yolu saatte 72 km hızla gider. Süre? Sadece saat.",
+      "expected": "2.5"
+    },
+    {
+      "id": "x02",
+      "category": "x",
+      "prompt": "4, 9, 16, 25 dizisinin sonraki elemanı? Sadece sayı.",
+      "expected": "36"
+    },
+    {
+      "id": "x03",
+      "category": "x",
+      "prompt": "Bir sayının üçte biri 18 ise sayı? Sadece sayı.",
+      "expected": "54"
+    },
+    {
+      "id": "x04",
+      "category": "x",
+      "prompt": "\"aabccc\" içindeki c harfi kaç kez geçer? Sadece sayı.",
+      "expected": "3"
+    },
+    {
+      "id": "x05",
+      "category": "x",
+      "prompt": "Yalnızca `durum=basarili` yaz.",
+      "expected": "durum=basarili"
+    }
+  ]
+}
